@@ -1,4 +1,7 @@
 *{
+	-moz-
+	-o-
+	-webkit-
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -17,141 +20,72 @@ nav{
 	height: 6vh;
 	background: #fff;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
 	z-index: 1000;
 	margin: 0px;
 		
 }
 
-.side-bar{
-	position: fixed;
-	left: -350px;
-	top: 0px;
-	width: 320px;
-	height: 100%;
-	background: #000;
-	transition: all .5s ease;
-	color: #fff;
-	
-
-}
-.side-bar header{
-	font-size: 20px;
-	color: #fff;
-	text-align: center;
-	line-height: 70px;
-	background: #000;
-	user-select: none;
-	margin-top: 45px;
-
-	}
-
-.side-bar ul{
-	list-style: none;
-    padding: 10px 30px;
-	
-}
-
-.side-bar ul a{
-	display: block;
-	height: 100%;
+banner-wrapper{
 	width: 100%;
-	line-height: 55px;
-	font-size: 18px;
-	color: #fff;
-	/*margin-top: 20px;*/
-	padding-left: 15px;
-	box-sizing: border-box;
-	/*border-top: 1px solid #aaa;
-	border-bottom: 1px solid #ccc;*/
-	transition: all .5s ease;
-	text-decoration: none; 
+	margin: 0;
+	padding: 0;
 }
 
-ul li:hover a{
-	padding-left: 40px; 
-}
 
-.side-bar ul a{
-	margin-right: 10px;
-}
-
-#check{
-	display: none;
-}
-
-div #cancel {
-	position: absolute;
-	cursor: pointer;
-	border-radius: 2px;
-	z-index: 1000;
-	}
-
-label #btn{
-	position: absolute;
-	cursor: pointer;
-	border-radius: 2px;
-	z-index: 1000;
-
-	}
-	label #btn {
-		left: 10px;
-		top: 3px;
-		font-size: 22px;
-		color: #000;
-		padding: 5px 7px;
-		transition: all .5s ease;
-	}
-
-div #cancel{
-		position: absolute;
-		z-index: 1111;
-		left: 175px;
-		top: 10px;
-		font-size: 22px;
-		color: #fff;
-		padding: 2px 7px;
-		transition: all .5s ease; 
-
-	}
-#check:checked ~ .side-bar{
-		left: 0px;
-	}
-
-#check:checked ~ label #btn{
-		left: 260px;
-		opacity: 0;
-		pointer-events: none;
-	}
-
-#check:checked ~ div #cancel{
-		left: 280px;
-	}
 
 h1{
-	display: relative;
-	text-align: center;
-	box-sizing: border-box;
+	color: #000;
+	margin-left: 130px;
+	margin-top: 50px;
+	font-size:30px;
+	font-weight: bold;
+	padding: 10px;
 }
+
+h1::first-letter{
+	font-size: 40px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+.side-bar ul{
+	list-style: none;
+	display: flex;
+	margin-top: 80px;
+	margin-left: 150px;
+    cursor: pointer;
+}
+.side-bar ul a{
+	text-decoration: none;
+	margin: 5px 10px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #000;
+	font-weight: 600;
+}
+
 
 .right-side{
 	display: flex;
-	margin: 5px;
-	padding: 5px 10px;
+	margin-left: auto;
+	padding: 65px 120px;
+	cursor: pointer;
 }
 
 .right-side a i{
-	margin: 10px;
 	color: #000;
-	font-size: 18px;
+	opacity: .8;
+	margin: 20px;
+	font-size: 20px;
+	cursor: pointer;
 }
 
+
 .banner-wrapper img{
+	width: 100%;
+	height: 100%;
 	position: relative;
-	margin-top: 20px;
-	margin-left: 50px;
+	margin-top: 50px;
+	margin-left: 0px;
 	z-index: -2;
 	box-sizing: border-box;
 }
@@ -167,21 +101,21 @@ h1{
 }
 .author{
 	position: absolute;
-	top: 870px;
+	top: 1010px;
 	left: 450px;
 	font-size: 16px;
 
 }
 .title{
 	position: absolute;
-	top: 900px;
+	top: 1040px;
 	left: 450px;
 	font-size: 18px;
 	font-weight: bold;
 }
 .rating img{
 	position: absolute;
-	top: 930px;
+	top: 1080px;
 	left: 280px;
 }
 
@@ -189,7 +123,7 @@ h1{
 
 .description {
 	position: absolute;
-	top: 970px;
+	top: 1100px;
 	left: 450px;
 	font-size: 16px;
 	text-align: left;
@@ -198,7 +132,7 @@ h1{
 }
 .price p{
 	position: absolute;
-	top: 1060px;
+	top: 1190px;
 	left: 450px;
 	color: #000;
 	font-size: 16px;
@@ -212,9 +146,9 @@ h1{
 }
 .purchase{
 	position: absolute;
-	top: 1090px;
+	top: 1230px;
 	left: 450px;
-	padding: 15px 35px;
+	padding: 13px 35px;
 	width: 12%;
 	text-align: center;
 	height: 45px;
@@ -243,21 +177,21 @@ h1{
 }
 .author2{
 	position: absolute;
-	top: 870px;
+	top: 1010px;
 	left: 1000px;
 	font-size: 16px;
 
 }
 .title2{
 	position: absolute;
-	top: 900px;
+	top: 1040px;
 	left: 1000px;
 	font-size: 18px;
 	font-weight: bold;
 }
 .rating2 img{
 	position: absolute;
-	top: 1280px;
+	top: 1430px;
 	left: 270px;
 }
 
@@ -265,7 +199,7 @@ h1{
 
 .description2 {
 	position: absolute;
-	top: 970px;
+	top: 1100px;
 	left: 1000px;
 	font-size: 16px;
 	text-align: left;
@@ -274,7 +208,7 @@ h1{
 }
 .price2 p{
 	position: absolute;
-	top: 1060px;
+	top: 1190px;
 	left: 1000px;
 	color: #000;
 	font-size: 16px;
@@ -288,9 +222,9 @@ h1{
 }
 .purchase2{
 	position: absolute;
-	top: 1090px;
+	top: 1230px;
 	left: 1000px;
-	padding: 15px 35px;
+	padding: 13px 35px;
 	width: 12%;
 	text-align: center;
 	height: 45px;
@@ -336,27 +270,27 @@ h1{
 
 .author3{
 	position: absolute;
-	top: 1290px;
+	top: 1430px;
 	left: 450px;
 	font-size: 16px;
 }
 
 .title3{
 	position: absolute;
-	top: 1320px;
+	top: 1460px;
 	left: 450px;
 	font-size: 18px;
 	font-weight: bold;
 }
 .rating3 img{
 	position: absolute;
-	top: 1350px;
+	top: 1500px;
 	left: 380px;
 
 }
 .description3{
 	position: absolute;
-	top: 1390px;
+	top: 1520px;
 	left: 450px;
 	font-size: 16px;
 	text-align: left;
@@ -364,7 +298,7 @@ h1{
 }
 .price3 p{
 	position: absolute;
-	top: 1480px;
+	top: 1610px;
 	left: 450px;
 	color: #000;
 	font-size: 16px;
@@ -378,9 +312,9 @@ h1{
 }
 .purchase3{
 	position: absolute;
-	top: 1510px;
+	top: 1650px;
 	left: 450px;
-	padding: 15px 35px;
+	padding: 13px 35px;
 	width: 12%;
 	text-align: center;
 	height: 45px;
@@ -410,14 +344,14 @@ h1{
 
 .author4{
 	position: absolute;
-	top: 1290px;
+	top: 1430px;
 	left: 1000px;
 	font-size: 16px;
 }
 
 .title4{
 	position: absolute;
-	top: 1320px;
+	top: 1460px;
 	left: 1000px;
 
 	font-size: 18px;
@@ -425,13 +359,13 @@ h1{
 }
 .rating4 img{
 	position: absolute;
-	top: 1750px;
+	top: 1900px;
 	left: 375px;
 
 }
 .description4{
 	position: absolute;
-	top: 1380px;
+	top: 1520px;
 	left: 1000px;
 	font-size: 16px;
 	text-align: left;
@@ -439,7 +373,7 @@ h1{
 }
 .price4 p{
 	position: absolute;
-	top: 1480px;
+	top: 1610px;
 	left: 1000px;
 	color: #000;
 	font-size: 16px;
@@ -453,9 +387,9 @@ h1{
 }
 .purchase4{
 	position: absolute;
-	top: 1510px;
+	top: 1650px;
 	left: 1000px;
-	padding: 15px 35px;
+	padding: 13px 35px;
 	width: 12%;
 	text-align: center;
 	height: 45px;
@@ -482,27 +416,27 @@ h1{
 
 .author5{
 	position: absolute;
-	top: 1710px;
+	top: 1860px;
 	left: 450px;
 	font-size: 16px;
 }
 
 .title5{
 	position: absolute;
-	top: 1740px;
+	top: 1890px;
 	left: 450px;
 	font-size: 18px;
 	font-weight: bold;
 }
 .rating5 img{
 	position: absolute;
-	top: 2300px;
+	top: 2460px;
 	left: 380px;
 
 }
 .description5{
 	position: absolute;
-	top: 1800px;
+	top: 1950px;
 	left: 450px;
 	font-size: 16px;
 	text-align: left;
@@ -510,7 +444,7 @@ h1{
 }
 .price5 p{
 	position: absolute;
-	top: 1900px;
+	top: 2040px;
 	left: 450px;
 	color: #000;
 	font-size: 16px;
@@ -524,9 +458,9 @@ h1{
 }
 .purchase5{
 	position: absolute;
-	top: 1930px;
+	top: 2080px;
 	left: 450px;
-	padding: 15px 35px;
+	padding: 13px 35px;
 	width: 12%;
 	text-align: center;
 	height: 45px;
@@ -555,27 +489,27 @@ h1{
 
 .author6{
 	position: absolute;
-	top: 1700px;
+	top: 1850px;
 	left: 1000px;
 	font-size: 16px;
 }
 
 .title6{
 	position: absolute;
-	top: 1730px;
+	top: 1880px;
 	left: 1000px;
 	font-size: 18px;
 	font-weight: bold;
 }
 .rating6 img{
 	position: absolute;
-	top: 2255px;
+	top: 2410px;
 	left: 375px;
 
 }
 .description6{
 	position: absolute;
-	top: 1790px;
+	top: 1940px;
 	left: 1000px;
 	font-size: 16px;
 	text-align: left;
@@ -583,7 +517,7 @@ h1{
 }
 .price6 p{
 	position: absolute;
-	top: 1890px;
+	top: 2030px;
 	left: 1000px;
 	color: #000;
 	font-size: 16px;
@@ -597,9 +531,9 @@ h1{
 }
 .purchase6{
 	position: absolute;
-	top: 1920px;
+	top: 2070px;
 	left: 1000px;
-	padding: 15px 35px;
+	padding: 13px 35px;
 	width: 12%;
 	text-align: center;
 	height: 45px;
@@ -616,17 +550,18 @@ h1{
     background-position: right bottom;
 
 }
-@media  screen and (min-width: 1200px)  {
+@media screen and (min-width: 800px){
 
-.banner-wrapper{
-	width: 100%;
-	margin: 0;
-	padding: 0;
+  #check, #btn, #cancel {
+	display: none;
+}
+	.disable {
+	 display: none;
+
 }
 
-
 }
-@media  screen and (max-width: 678px)  {
+@media  screen and (max-width: 600px)  {
 
 body{
 	margin: 0;
@@ -634,19 +569,150 @@ body{
 	box-sizing: border-box;
 }
 
-h1{
-	margin-left: 100px;
-}
-
-label #cancel{
-	display: absolute;
-}
-
-main{
+nav{
 	width: 100%;
-	margin: 0 auto;
-	box-sizing: border-box;
+	height: 6vh;
+	background: #6DD5FA;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	position: fixed; 
+	z-index: 1000;
+	margin: 0px;
+		
 }
+.side-bar {
+	position: fixed;
+	left: -350px;
+	top: 0px;
+	width: 320px;
+	height: 100%;
+	background: black;
+	transition: all .5s ease;
+	color: #fff;	
+
+}
+
+.side-bar header{
+	
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	background: #000;
+	user-select: none;
+
+	}
+
+.side-bar ul{
+	display: block;
+	list-style: none;
+    padding: 5px 30px;
+   	margin-left: 0px; 
+   
+	
+}
+
+.side-bar ul a {
+	/*display: block;*/
+	height: 100%;
+	width: 100%;
+	line-height: 55px;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 5px;
+	box-sizing: border-box;
+	transition: all .5s ease;
+	text-decoration: none; 
+}
+
+ul li:hover a{
+	padding-left: 10px; 
+}
+
+.side-bar ul a{
+	margin-right: 10px;
+}
+
+#check{
+	display: none;
+}
+
+label #btn div #cancel{
+	position: absolute;
+	cursor: pointer;
+	border-radius: 2px;
+	z-index: 1000;
+
+	}
+label #btn {
+		
+		left: 10px;
+		top: 3px;
+		font-size: 30px;
+		color: #000;
+		padding: 5px 7px;
+		transition: all .5s ease;
+	}
+
+div #cancel{
+		position: absolute;
+		z-index: 1111;
+		left: 175px;
+		top: 10px;
+		font-size: 22px;
+		color: #fff;
+		padding: 2px 7px;
+		transition: all .5s ease; 
+
+	}
+#check:checked ~ .side-bar{
+		left: 0px;
+	}
+
+#check:checked ~ label #btn{
+		left: 260px;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+#check:checked ~ div #cancel{
+		left: 280px;
+	}
+
+h1{
+	position: relative;
+	top: -22px;
+	left: -60px;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+h1::first-letter{
+	font-size: 32px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.right-side{
+	display: flex;
+	margin: 7px;
+	padding: 0px 0px;
+
+}
+
+.right-side a i{
+	margin: 4px;
+	color: #fff;
+	opacity: 1;
+	font-size: 16px;
+
+}
+ .join a i{
+	display: none;
+ }
+ 
 .banner-wrapper img{
 	box-sizing: border-box;
 	width: 100%;
@@ -664,61 +730,61 @@ main{
 }
 .author{
 	
-	margin-top: -180px;
+	margin-top: -330px;
 	margin-left: -380px;
 }
 
 .title{
-	margin-top: -190px; 
-	margin-left: -380px;
+	margin-top: -340px; 
+	margin-left: -381px;
 }
 .rating img{
-	margin-top: -190px;
-	margin-left: -210px;
+	margin-top: -345px;
+	margin-left: -211px;
 }
 .description{
-	margin-top: -200px;
+	margin-top: -350px;
 	margin-left:-385px ;
 }
 
 .price p{
-	margin-top: -200px;
+	margin-top: -352px;
 	margin-left: -385px;
 }
 
 .purchase{
-	margin-top: -200px;
+	margin-top: -355px;
 	margin-left: -385px;
 	width: 50%;
 }
 .cover2 img{
 	margin-left: 45px;
-	margin-top: 240px;
+	margin-top: 230px;
 }
 .author2{
-	margin-top: 460px;
+	margin-top: 300px;
 	margin-left: -925px;
 }
 
 .title2{
-	margin-top: 455px;
+	margin-top: 290px;
 	margin-left: -925px;
 }
 .rating2 img{
-	margin-top: 100px;
+	margin-top: -65px;
 	margin-left: -194px; 
 }
 
 .description2{
-	margin-top: 440px;
+	margin-top: 285px;
 	margin-left: -925px;
 }
 .price2 p{
-	margin-top: 440px;
+	margin-top: 282px;
 	margin-left: -925px;
 }
 .purchase2{
-	margin-top: 440px;
+	margin-top: 282px;
 	margin-left: -925px;
 	width: 50%;
 }
@@ -728,63 +794,63 @@ main{
 	margin-top: 250px;
 }
 .author3{
-	margin-top: 670px;
+	margin-top: 510px;
 	margin-left: -368px;
 }
 
 .title3{
-	margin-top: 662px;
+	margin-top: 500px;
 	margin-left: -368px;
 }
 .rating3 img{
-	margin-top: 660px;
+	margin-top: 495px;
 	margin-left: -300px; 
 }
 
 .description3{
 
-	margin-top: 650px;
+	margin-top: 492px;
 	margin-left: -372px;
 }
 .price3 p{
-	margin-top: 650px;
+	margin-top: 490px;
 	margin-left: -370px;
 }
 .purchase3{
-	margin-top: 650px;
+	margin-top: 490px;
 	margin-left: -370px;
 	width: 50%;
 }
 
 .educate img{
 	margin-left: 25px;
-	margin-top: 250px;
+	margin-top: 230px;
 }
 .author4{
-	margin-top: 1320px;
+	margin-top: 1150px;
 	margin-left: -915px;
 }
 
 .title4{
-	margin-top: 1315px;
+	margin-top: 1140px;
 	margin-left: -915px;
 }
 .rating4 img{
-	margin-top: 905px;
+	margin-top: 730px;
 	margin-left: -295px; 
 }
 
 .description4{
 
-	margin-top: 1310px;
+	margin-top: 1135px;
 	margin-left: -920px;
 }
 .price4 p{
-	margin-top: 1300px;
+	margin-top: 1132px;
 	margin-left: -920px;
 }
 .purchase4{
-	margin-top: 1300px;
+	margin-top: 1133px;
 	margin-left: -920px;
 	width: 50%;
 }
@@ -794,30 +860,30 @@ main{
 	margin-top: -190px;
 }
 .author5{
-	margin-top: 1520px;
+	margin-top: 1340px;
 	margin-left: -368px;
 }
 
 .title5{
-	margin-top: 1515px;
+	margin-top: 1330px;
 	margin-left: -370px;
 }
 .rating5 img{
-	margin-top: 980px;
+	margin-top: 800px;
 	margin-left: -300px; 
 }
 
 .description5{
 
-	margin-top: 1510px;
+	margin-top: 1330px;
 	margin-left: -375px;
 }
 .price5 p{
-	margin-top: 1510px;
+	margin-top: 1320px;
 	margin-left: -370px;
 }
 .purchase5{
-	margin-top: 1510px;
+	margin-top: 1320px;
 	margin-left: -370px;
 	width: 50%;
 }
@@ -826,30 +892,30 @@ main{
 	margin-top: 150px;
 }
 .author6{
-	margin-top: 2180px;
+	margin-top: 2000px;
 	margin-left: -910px;
 }
 
 .title6{
-	margin-top: 2175px;
+	margin-top: 1990px;
 	margin-left: -910px;
 }
 .rating6 img{
-	margin-top: 1670px;
+	margin-top: 1490px;
 	margin-left: -290px; 
 }
 
 .description6{
 
-	margin-top: 2180px;
+	margin-top: 1985px;
 	margin-left: -915px;
 }
 .price6 p{
-	margin-top: 2180px;
+	margin-top: 1980px;
 	margin-left: -915px;
 }
 .purchase6{
-	margin-top: 2180px;
+	margin-top: 1980px;
 	margin-left: -915px;
 	width: 50%;
 }
